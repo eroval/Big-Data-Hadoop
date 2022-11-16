@@ -28,4 +28,4 @@ for line in sys.stdin:
 
 for key in my_map:
     for percentage in sorted(my_map[key]):
-        print(f"{key}: {percentage}  {my_map[key][percentage]}")
+        print(f"{key}: {percentage} {my_map[key][percentage]}")
