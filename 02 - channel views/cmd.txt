@@ -1,0 +1,4 @@
+cat join2_genchanA.txt <(echo) join2_genchanB.txt <(echo) join2_genchanC.txt | \
+python3 mapper.py >> tmpfile.txt && sleep 0.0000005 | \
+cat tmpfile.txt join2_gennumA.txt join2_gennumB.txt join2_gennumC.txt | \
+python3 reducer.py | sort -k1,1 && rm tmpfile.txt
