@@ -1,0 +1,1 @@
+cat train.csv | python3 mapper.py | sort -k1,1r | python3 reducer.py > result.txt
